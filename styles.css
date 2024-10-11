@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/* Navigation Styling */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* because i want the header to be sticky later */
+  height: 9.6rem;
+
+  padding: 0 3.8rem;
+
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.logo-svg {
+  height: 2rem;
+  width: 2rem;
+
+  fill: #a11919;
+}
+
+.logo-text:link,
+.logo-text:visited {
+  list-style: none;
+  text-decoration: none;
+  color: #a11919;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #0e2f59;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 24px;
+  transition: all 0.3s;
+}
+
+a:active {
+  color: #a11919;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #a11919;
+}
+
+/* main body styling */
+.main {
+  padding: 0 3.8rem;
+}
+
+/* app section */
+.app-section {
+  padding: 0 6.8rem;
+}
+
+.app-title {
+  font-size: 3rem;
+  line-height: 22.88px;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.app-divide {
+  display: flex;
+  gap: 7rem;
+}
+
+.app-form {
+  height: 34rem;
+  width: 50rem;
+  padding: 2rem 2rem;
+  background-color: whitesmoke;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.dropdown-btn {
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+}
+
+.major {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 2rem;
+  gap: 0.4rem;
+}
+
+.major-input {
+  height: 2.5rem;
+  width: 23.7rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #d0d0d0;
+}
+
+.duration-section {
+  display: flex;
+  gap: 1rem;
+  width: 30rem;
+}
+
+.duration-input {
+  height: 2.5rem;
+  width: 70%;
+  border: none;
+  border-radius: 6px;
+  background-color: #d0d0d0;
+}
+
+.duration-options {
+  height: 2.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #d0d0d0;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.btn-section {
+  margin-top: 3.5rem;
+}
+
+.calculate-btn {
+  border: none;
+  border-radius: 6%;
+  background-color: #ef6d13;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
+
+.clear-btn {
+  border: none;
+  border-radius: 6%;
+  background-color: #d9d9d9;
+  color: #000000;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
+
+.app-result {
+}
+
+.app-result-title {
+  color: #2213fc;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 22.88px;
+}
+
+.result-header {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.result-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 22.88px;
+}
+
+.roi-result {
+  color: #fa7a21;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 22.88px;
+}
+
+.result-diagram-section {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.piechart {
+  width: 70%;
+}
+
+.piechart-text {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Calculation Section */
+
+.calcution-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.calculation-header {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 22.88px;
+}
+
+.calculation-description {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 22.88px;
+}
+
+.calculation-img {
+  width: 30%;
+  align-self: center;
+}

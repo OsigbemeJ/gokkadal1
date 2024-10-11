@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gokkadal</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo-text" href="#">
+        <img src="logo.png" alt="" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Find Solutions</a></li>
+          <li><a class="main-nav-link" href="#">Find Services</a></li>
+          <li><a class="main-nav-link" href="#">SME Solutions</a></li>
+          <li><a class="main-nav-link" href="#">Industries</a></li>
+          <li><a class="main-nav-link" href="#">Knowledge Base</a></li>
+          <li><a class="main-nav-link" href="#">Support</a></li>
+        </ul>
+      </nav>
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#">Sign In</a></li>
+        <li><a class="main-nav-link" href="#">Login</a></li>
+      </ul>
+    </header>
+    <!-- Application Beginning  -->
+    <main class="main">
+      <section class="app-section">
+        <h1 class="app-title">Return on Investment (ROI) Calculator</h1>
+
+        <div class="app-divide">
+          <form action="" class="app-form">
+            <label for="dropdown-btn">Select an Industry</label>
+            <select class="dropdown-btn" id="dropdown" name="dropdown"></select>
+            <div class="major">
+              <label for="initial-investment">Initial Investment</label>
+              <input type="text" class="major-input" />
+            </div>
+            <div class="major">
+              <label for="final-value">Final Value</label>
+              <input type="text" class="major-input" />
+            </div>
+            <div class="major">
+              <label for="duration-of-investment">Duration Of Investment</label>
+              <div class="duration-section">
+                <input type="text" class="duration-input" />
+                <select
+                  id="options"
+                  name="duration-options"
+                  class="duration-options"
+                >
+                  <option value="option1">Years</option>
+                </select>
+              </div>
+            </div>
+            <div class="btn-section">
+              <button class="calculate-btn">Calculate</button>
+              <button class="clear-btn">Clear</button>
+            </div>
+          </form>
+          <!-- App Section -->
+          <div class="app-result">
+            <h1 class="app-result-title">Results</h1>
+
+            <div class="result-header">
+              <p class="result-text">
+                Your ROI is: <span class="roi-result">0%</span>
+              </p>
+              <p class="result-text">Investment Gain</p>
+              <p class="result-text">Annualized ROI</p>
+            </div>
+            <div class="result-diagram-section">
+              <img src="pie.png" alt="" class="piechart" />
+              <div class="piechart-text">
+                <p>Invested</p>
+                <p>Profit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calculation Description Section -->
+      <section class="calcution-section">
+        <h2 class="calculation-header">What is ROI?</h2>
+        <p class="calculation-description">
+          ROI (Return on Investment) is a financial metric used to evaluate the
+          profitability of an investment. It measures the return generated
+          relative to the investment's cost. ROI is typically expressed as a
+          percentage and is calculated using the formula:
+        </p>
+        <img class="calculation-img" src="calculation 1.png" alt="" />
+
+        <!--  -->
+        <h2 class="calculation-header">Example:</h2>
+        <p class="calculation-description">
+          If you invest $1,000 in a project and it grows to $1,500, the ROI
+          would be:
+        </p>
+        <img class="calculation-img" src="calculation 2.png" alt="" />
+      </section>
+    </main>
+  </body>
+</html>
